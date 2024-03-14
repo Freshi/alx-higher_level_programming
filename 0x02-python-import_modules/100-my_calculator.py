@@ -19,4 +19,4 @@ if __name__ == "__main__":
         result = mul(a, b)
     elif sign == '/':
         result = div(a, b)
-    print("{} {} {} = {} ".format(a, sign, b, result))
+    print("{} {} {} = {}".format(a, sign, b, result))
