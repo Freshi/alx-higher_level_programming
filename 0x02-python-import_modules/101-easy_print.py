@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 import os
-os.system("echo \#pythoniscool\n")
+os.system("printf %s '#pythoniscool\n'")
