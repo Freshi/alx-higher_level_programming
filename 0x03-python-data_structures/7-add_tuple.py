@@ -9,7 +9,7 @@ def add_tuple(tuple_1=(), tuple_2=()):
         elif size == 1 and item[0]:
             new_tuples.append((item[0], 0))
         elif size == 1 and item[1]:
-            new_tuple.append((o, item[1]))
+            new_tuple.append((0, item[1]))
         elif size > 2:
             new_tuples.append(item[1:2])
         else:
