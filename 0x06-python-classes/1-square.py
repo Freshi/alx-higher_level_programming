@@ -7,4 +7,9 @@ class Square:
 
     '''
     def __init__(self, size):
+        '''
+        prototype to initialise instance variables
+
+        Attributes: size(int): size of one side
+        '''
         self.__size = size
