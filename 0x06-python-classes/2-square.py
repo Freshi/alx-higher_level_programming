@@ -14,7 +14,7 @@ class Square:
             size(int): Side of square, default: 0
 
         """
-        self.__size = size
+        self.size = size
 
     def __setattr__(self, name, value):
         if name == 'size':
@@ -22,4 +22,4 @@ class Square:
                 raise TypeError('size must be integer')
             elif value < 0:
                 raise ValueError('size must be >= 0')
-        self.__dict__[f"__(size)"] = value
+        self.__dict__[f"__(name)"] = value
