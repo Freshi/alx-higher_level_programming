@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
 Square
-Empty class that initialises an empy square and returns nothing.
+    -Empty class that initialises an empy square and returns nothing.
 """
 
-Class Square:
+class Square:
     """Initialises an empty square."""
     pass
