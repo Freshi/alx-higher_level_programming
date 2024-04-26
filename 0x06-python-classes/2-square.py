@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Square class that contains a private size attribute that is set using the __setattri__ setter method
+"""
+
+
 class Square:
     """
     Initialises a square of size s
