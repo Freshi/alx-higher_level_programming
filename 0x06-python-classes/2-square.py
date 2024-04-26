@@ -14,7 +14,7 @@ class Square:
             size(int): Side of square, default: 0
 
         """
-        self.size = size
+        self.__size = size
 
     def __setattr__(self, name, value):
         if name == 'size':

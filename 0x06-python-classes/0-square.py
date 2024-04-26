@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-class Square:
-    """
-    Initialises an emptyl class with no attibutes
-    """
+"""
+Square
+    - properties
+        -None
+"""
+Class Square:
+    """Initialises an empty square"""
     pass
