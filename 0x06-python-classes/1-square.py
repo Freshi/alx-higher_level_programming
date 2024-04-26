@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+"""
+Square class contaiing a single size attribute.
+"""
+
+
 class Square:
-    '''Initilises a square of size
+    '''Initilises a square of length size
 
     Attributes:
         size (int): side of one side of the square
