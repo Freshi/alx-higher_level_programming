@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Square class that contains a private size attribute that is set using the __setattri__ setter method
+Square class that contains a private size attribute
+that is set using the __setattri__ setter method
 """
 
 
@@ -19,12 +20,12 @@ class Square:
             size(int): Side of square, default: 0
 
         """
-        self.__size = size
+        self.set_size(size)
 
-    def __setattr__(self, name, value):
-        if name == 'size':
-            if type(value) != int:
-                raise TypeError('size must be integer')
-            elif value < 0:
-                raise ValueError('size must be >= 0')
-        self.__dict__[f"__(name)"] = value
+    def set_size(self, new_size):
+        if type(new_size) is not int:
+            raise TypeError('size must be integer')
+        elif new_size < 0:
+            raise ValueError('size must be >= 0')
+        else:
+            self.__size = new_size
