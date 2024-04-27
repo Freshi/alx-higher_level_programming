@@ -24,7 +24,7 @@ class Square:
 
     def set_size(self, new_size):
         if type(new_size) is not int:
-            raise TypeError('size must be integer')
+            raise TypeError('size must be an integer')
         elif new_size < 0:
             raise ValueError('size must be >= 0')
         else:
