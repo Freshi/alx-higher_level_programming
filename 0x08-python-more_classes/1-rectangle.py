@@ -4,6 +4,7 @@ Rectangle
     -Initialises a class rectangle with a width and height.
 '''
 
+
 class Rectangle:
     '''
     Initialises a rectangle object
@@ -40,4 +41,3 @@ class Rectangle:
             raise ValueError('height must be >= 0')
         else:
             self.__height = height
-
