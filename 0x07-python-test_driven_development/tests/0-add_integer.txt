@@ -1,0 +1,41 @@
+# add_integer_help.txt
+
+===========================================
+How to use the ``add_integer(a, b)`` function
+from the module add_integer.py
+===========================================
+
+---------------
+Usage
+---------------
+
+The ``add_integer(a, b=98)`` function takes in two arguments
+which must be of type int or float and adds them together.
+
+::
+	first import the module
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+::
+	Adding two ints
+	>>> add_integer(4, 5)
+	9
+
+::
+	Adding two floats
+	>>> add_integer(4.0, 5.4)
+	9
+
+::
+	Adding an int and a string
+	>>> add_integer(4, 'imani')
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+::
+	Adding a string to an int or float
+	>>> add_integer('clive', 5)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+
