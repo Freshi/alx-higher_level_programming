@@ -38,4 +38,42 @@ which must be of type int or float and adds them together.
 	Traceback (most recent call last):
 	TypeError: a must be an integer
 
+::
+	You can use the function with a single argument
+	as the second one defaults to 98
+	>>> add_integer(4)
+	102
 
+::
+	Having None as an argument will result in an error
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+::
+	Same goes if None is the second argument
+	>>> add_integer(2, None)
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+::
+	type casted nans' are not allowed
+	>>> add_integer(float('nan'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
+
+::
+	>>> add_integer(4, float('nan'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
+
+::
+	Using infinity as a value is not allowed
+	>>> add_integer(float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+::
+	>>> add_integer(4, float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
