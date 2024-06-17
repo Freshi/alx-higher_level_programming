@@ -12,3 +12,4 @@ class MyList(list):
     def print_sorted(self):
         # prints itself sorted in ascending order
         print(sorted(self))
+        return sorted(self)
