@@ -1,0 +1,38 @@
+# MyList module tests
+
+----------------------------
+How to use the MyList class
+----------------------------
+
+This object inherits from the `list` object and has an additional
+public method `print_sorted()` that prints the list sorted in an
+ascending manner.
+
+::
+	first import the object and create an istance of it.
+	>>> MyList = __import__('1-my_list').MyList
+	>>> my_list = MyList()
+
+::
+	Append to the list
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+
+::
+	Extend the list
+	>>> my_list.extend([1, 3, 5])
+
+::
+	print the list
+	>>> print(my_list)
+	[4, 2, 1, 3, 5]
+
+::
+	print sorted list
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+
+::
+	check if my_list is instance of list
+	>>> isinstance(my_list, list)
+	True
