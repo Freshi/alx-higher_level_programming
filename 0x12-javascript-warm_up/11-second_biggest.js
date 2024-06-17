@@ -4,5 +4,5 @@ if (argv.length <= 3) {
   console.log(0);
 } else {
   const args = argv.map(x => Number(x));
-  console.log(args.sort((a, b) => a - b).at(-2));
+  console.log(args.sort((a, b) => a - b).reverse()[1]);
 }
