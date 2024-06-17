@@ -44,15 +44,17 @@ ascending manner.
 ::
 	print sorted list after negative append
 	>>> my_list.print_sorted()
+	[-2, 1, 2, 3, 4, 5]
 
 ::
 	print sorted on an empty list
-	>>> my_list1 = myList()
+	>>> my_list1 = MyList()
 	>>> my_list1.print_sorted()
 	[]
 
 ::
 	print_sorted should return a new list
 	>>> my_list2 = my_list.print_sorted()
+	[-2, 1, 2, 3, 4, 5]
 	>>> my_list2 is my_list
 	False
