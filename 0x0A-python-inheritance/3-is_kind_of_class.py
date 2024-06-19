@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-'''
+"""
 Checks if an object is an instance of a given
-class or instance of class that inherits
-from given class
-'''
+class or instance of class that inherits from it.
+"""
 
 
 def is_kind_of_class(obj, a_class):
